@@ -12,25 +12,26 @@
 </head>
 
 <body>
+  <a id="newGameButton" href="index.html">New Game</a>
   <div class="container">
-    <div class="header">
-      <img src="images/pig-dice.png" alt="PIG DICE" height="180px">
-      <h1>Mario Bros Pig Dice</h1>
-    </div>
     <div class="formContainer">
       <form id="signupForm">
+        <div class="header">
+          <img src="images/pig-dice.png" alt="PIG DICE" height="180px">
+          <h1>Mario Bros Pig Dice</h1>
+        </div>
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-5">
             <div class="enterYourName">
               <label for="playerOne">Player one, enter your name:</label>
-              <input class="form-control" type="text" id="playerOne" placeholder="Player one" required></input>
+              <input class="form-control" type="text" id="player1Name" placeholder="Player one" required></input>
             </div>
           </div>
           <div class="col-md-5">
             <div class="enterYourName">
               <label for="playerTwo">Player two, enter your name:</label>
-              <input class="form-control" type="text" id="playerTwo" placeholder="Player two" required></input>
+              <input class="form-control" type="text" id="player2Name" placeholder="Player two" required></input>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -38,34 +39,39 @@
         <button id="startGame" type="submit" class="btn btn-primary startButtonStyle">START GAME</button>
       </form>
     </div>
+    <div class="gameInterface">
 
-    <div class="row gameInterface">
-      <div class="col-md-4 scoreBoard">
-        <h3><span id="playerOneName"></span>'s total Score:</h3>
-        <img src="images/mario.png" alt="Player One" height="180px">
-        <h3 class="mario"><span id="playerOneTotalScore"></span></h3>
-      </div>
-      <div class="col-md-4 minheightboard">
-        <img id="dice" src="images/dice.gif" alt="" height="120px">
-        <h3><span id="rollPoints"></span></h3>
-        <div id="whoPlays">
-          <h3 id="playerOnePlays"></h3>
-          <h3 id="playerTwoPlays"></h3>
+
+      <div class="row">
+        <div class="col-md-4 scoreBoard">
+          <h3><span id="playerOneName"></span>'s total Score:</h3>
+          <img src="images/mario.png" alt="Player One" height="180px">
+          <h3 class="mario"><span id="playerOneTotalScore"></span></h3>
+        </div>
+        <div class="col-md-4 minheightboard">
+          <img id="dice" src="images/dice.gif" alt="" height="120px">
+          <h3><span id="rollPoints"></span></h3>
+          <div id="whoPlays">
+            <h3 id="playerOnePlays"></h3>
+            <h3 id="playerTwoPlays"></h3>
+          </div>
+          <div id="pigDiceButtons">
+            <button type="submit" class="btn btn-success" id="roll">Roll!</button>
+            <button type="submit" class="btn btn-danger" id="hold">Hold!</button>
+          </div>
+
           <div id="highlights"></div>
-        </div>
 
-        <button type="submit" class="btn btn-success" id="roll">Roll!</button>
-        <button type="submit" class="btn btn-danger" id="hold">Hold!</button>
-
-        <div id="totalRollScoreContainer">
-          <h3>Turn total:</h3>
-          <h3><span id="totalRollScore"></span></h3>
+          <div id="totalRollScoreContainer">
+            <h3>Total Roll Score:</h3>
+            <h3><span id="totalRollScore"></span></h3>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 scoreBoard">
-        <h3><span id="playerTwoName"></span>'s total Score:</h3>
-        <img src="images/luigi.png" alt="Player Two" height="180px">
-        <h3 class="luigi"><span id="playerTwoTotalScore"></span></h3>
+        <div class="col-md-4 scoreBoard">
+          <h3><span id="playerTwoName"></span>'s total Score:</h3>
+          <img src="images/luigi.png" alt="Player Two" height="180px">
+          <h3 class="luigi"><span id="playerTwoTotalScore"></span></h3>
+        </div>
       </div>
     </div>
 

@@ -16,6 +16,7 @@
   margin-top: 40px;
 }
 .gameInterface{
+  display: none;
   margin-top: 60px;
 }
 .scoreBoard{
@@ -23,9 +24,41 @@
   min-height: 150px;
   text-align: center;
 }
+.scoreBoard h3{
+  padding-top: 40px;
+}
 .minheightboard{
-  min-height: 150px;
+  min-height: 500px;
   text-align: center;
+}
+.mario {
+  border: 2px solid black;
+  background:#dc0908;
+  text-align: center;
+  font-size: 100px;
+}
+.luigi {
+  border: 2px solid black;
+  background:#40b93a;
+  text-align: center;
+  font-size: 100px;
+}
+#newGameButton {
+  visibility: hidden;
+  background-color: #4CAF50;
+  width: 100%;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
 }
 
 #rollPoints {
@@ -35,12 +68,15 @@
   font-size: 100px;
 }
 #whoPlays {
-  min-height: 70px;
-  display: none;
   text-align: center;
-  border: 2px solid black;
   color: #ffffff;
   background-color: black;
+  padding-top: 4px;
+
+}
+#pigDiceButtons {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
 }
 #highlights {
