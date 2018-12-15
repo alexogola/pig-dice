@@ -15,3 +15,49 @@
 .startButtonStyle {
   margin-top: 40px;
 }
+.gameInterface{
+  margin-top: 60px;
+}
+.scoreBoard{
+  border: 2px solid black;
+  min-height: 150px;
+  text-align: center;
+}
+.minheightboard{
+  min-height: 150px;
+  text-align: center;
+}
+
+#rollPoints {
+  border: 2px solid black;
+  display: none;
+  text-align: center;
+  font-size: 100px;
+}
+#whoPlays {
+  min-height: 70px;
+  display: none;
+  text-align: center;
+  border: 2px solid black;
+  color: #ffffff;
+  background-color: black;
+
+}
+#highlights {
+  text-align: center;
+  border: 2px solid black;
+  color: #ffffff;
+  background-color: black;
+}
+
+#totalRollScoreContainer {
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
+#totalRollScore {
+    text-align: center;
+    border: 2px solid black;
+    font-size: 100px;
+    text-decoration: underline;
+}

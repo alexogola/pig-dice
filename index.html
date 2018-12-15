@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" text="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>PIG DICE</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <img src="images/pig-dice.png" alt="PIG DICE" height="180px">
-        <h1>Mario Bros Pig Dice</h1>
-      </div>
-      <div class="formContainer">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" text="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>PIG DICE</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/pig-dice.png" alt="PIG DICE" height="180px">
+      <h1>Mario Bros Pig Dice</h1>
+    </div>
+    <div class="formContainer">
       <form id="signupForm">
         <div class="row">
           <div class="col-md-1"></div>
@@ -35,8 +37,42 @@
         </div>
         <button id="startGame" type="submit" class="btn btn-primary startButtonStyle">START GAME</button>
       </form>
+    </div>
+
+    <div class="row gameInterface">
+      <div class="col-md-4 scoreBoard">
+        <h3><span id="playerOneName"></span>'s total Score:</h3>
+        <img src="images/mario.png" alt="Player One" height="180px">
+        <h3 class="mario"><span id="playerOneTotalScore"></span></h3>
+      </div>
+      <div class="col-md-4 minheightboard">
+        <img id="dice" src="images/dice.gif" alt="" height="120px">
+        <h3><span id="rollPoints"></span></h3>
+        <div id="whoPlays">
+          <h3 id="playerOnePlays"></h3>
+          <h3 id="playerTwoPlays"></h3>
+          <div id="highlights"></div>
+        </div>
+
+        <button type="submit" class="btn btn-success" id="roll">Roll!</button>
+        <button type="submit" class="btn btn-danger" id="hold">Hold!</button>
+
+        <div id="totalRollScoreContainer">
+          <div id="turnTotalStuffcontent">
+            <h3>Turn total:</h3>
+            <h3><span id="turnTotal"></span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 scoreBoard">
+        <h3><span id="playerTwoName"></span>'s total Score:</h3>
+        <img src="images/luigi.png" alt="Player Two" height="180px">
+        <h3 class="luigi"><span id="playerTwoTotalScore"></span></h3>
       </div>
     </div>
 
-  </body>
+    </div>
+
+</body>
+
 </html>
