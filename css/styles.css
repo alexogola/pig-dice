@@ -6,6 +6,7 @@
 }
 .header h1 {
   margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 .enterYourName {
   margin-top: 20px;
@@ -46,6 +47,7 @@
   visibility: hidden;
   background-color: #4CAF50;
   width: 100%;
+  font-family: "Times New Roman", Times, serif;
   /* Green */
   border: none;
   color: white;
