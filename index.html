@@ -11,7 +11,31 @@
   </head>
   <body>
     <div class="container">
-      
+      <div class="header">
+        <img src="images/pig-dice.png" alt="PIG DICE" height="180px">
+        <h1>Mario Bros Pig Dice</h1>
+      </div>
+      <div class="formContainer">
+      <form id="signupForm">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <div class="enterYourName">
+              <label for="playerOne">Player one, enter your name:</label>
+              <input class="form-control" type="text" id="playerOne" placeholder="Player one" required></input>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="enterYourName">
+              <label for="playerTwo">Player two, enter your name:</label>
+              <input class="form-control" type="text" id="playerTwo" placeholder="Player two" required></input>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <button id="startGame" type="submit" class="btn btn-primary startButtonStyle">START GAME</button>
+      </form>
+      </div>
     </div>
 
   </body>
