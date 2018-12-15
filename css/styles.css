@@ -8,6 +8,11 @@
   margin-top: 20px;
   font-family: "Times New Roman", Times, serif;
 }
+
+.nameInputSection {
+  border: 2px solid black;
+  padding-bottom: 20px;
+}
 .enterYourName {
   margin-top: 20px;
 }
