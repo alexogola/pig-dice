@@ -39,7 +39,7 @@ Behaviour | Input | Output
 ----- | ----- | -----
 If the dice rolls 1 the turn score is 0 | Dice: 5, Turn Score: 5 | Dice: 1, Turn Score: 0
 If the dice rolls 1 it becomes the next player's turn | Dice: 5, Turn Score: 5, Player1 | Dice: 1, Turn Score: 0, "It's the next player's turn!"
-If the player clicks "Hold" the turn score is transferred to the total score, and the turn score turns to 0 | Turn Score: 10 Total Score: 0  | Turn Score: 0 Total Score: 0
+If the player clicks "Hold" the turn score is transferred to the total roll score, and the turn score turns to 0 | Turn Score: 10 Total Roll Score: 0  | Turn Score: 0 Total Roll Score: 0
 If the player clicks "Hold" it becomes the next player's turn | Dice: 5, Turn Score: 5, Player1 | "It's Player 2's turn"
 
 ## Live link
