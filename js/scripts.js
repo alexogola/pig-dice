@@ -71,7 +71,7 @@ $(document).ready(function() {
         $('#highlights').show();
         turnRollArray = [0];
         $("#totalRollScore").text(turnRollArray);
-        setTimeout(function() { $("#highlights").html("YOU ROLLED A 1- NO POINTS!!"); }, 50 );
+        setTimeout(function() { $("#highlights").html("The dice rolled 1, the turn score is 0"); }, 50 );
         $('#highlights').fadeOut(4000);
         setTimeout(function() {$("#playerTwoPlays").text(whoIsPlaying[1].playerName + "'s turn").show();}, 100 );
         $("#playerOnePlays").hide();
@@ -81,7 +81,7 @@ $(document).ready(function() {
         $('#highlights').show();
         turnRollArray = [0];
         $("#totalRollScore").text(turnRollArray);
-        setTimeout(function() { $("#highlights").html("YOU ROLLED A 1- NO POINTS!!"); }, 50 );
+        setTimeout(function() { $("#highlights").html("The dice rolled 1, the turn score is 0"); }, 50 );
         $('#highlights').fadeOut(10);
         setTimeout(function() {$("#playerOnePlays").text(whoIsPlaying[0].playerName + "'s turn").show();}, 100 );
         $("#playerTwoPlays").hide();
